@@ -1,0 +1,45 @@
+@layout('layouts.main')
+@section('title')
+Divam Technologies
+@endsection
+
+@section('content')
+<!-- /navigation -->
+<!-- hero area -->
+<section class="hero-section" data-background="" style="background-image: url(/images/hero-area/banner-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <!-- banner image -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /hero-area -->
+
+<!-- feature -->
+<section style="margin-top:-250px;"class="section-lg team" id="team">
+   <div class="container">
+    <div class="row">
+      <!-- feature item -->
+            <!-- feature item -->
+      
+		  <div class="col-md-12 col-lg-12 mb-5 mb-lg-0">
+            <div class="rounded" style="padding: 30px 20px;background-image: linear-gradient(253deg, #008dec 0%, #00ffe7 95%);">
+			  <h3>{{{abc[0].title}}}</h3>
+               @if(abc[0].content===null)
+              <p style="overflow-wrap: break-word;">No Content</p>
+              @else
+              <p style="overflow-wrap: break-word;" value={{{abc[0].content.substring(1,abc[0].content.length-3)}}} ></p>
+              @endif
+            </div>
+          </div>
+		  </div>
+		  </div>
+</section>
+<!-- /feature -->
+<center>
+</center>
+
+@endsection
+@layout('layouts.footer')
