@@ -41,15 +41,17 @@
     </ul>
   </div>
 </nav>
-{{{a.code}}}
 </header>
-    <form>
-<br>    
-<table>
-<a href="/admin/blog/post/new"><button type="button" class="btn btn-success" style="margin-top:5%;margin-left:10%;">Add New Blog</button></a>
-<a href="/admin/blog/visible"><button type="button" class="btn btn-info" style="margin-top:5%;margin-left:5%;">Show Posts</button></a>
-   <tr><td><h1><a href="/showpost"></a></h1></td></tr>
-</table>
-    </form>  
+   @each(post in abc)
+  <div style="color:#000000;font-size:100%;"  class="jumbotron jumbotron-light bg-light">
+  Name:{{{post.name}}}<br>  
+  E Mail:{{{post.email}}}<br>
+  Mobile:{{{post.mobile}}}<br>
+  Category:{{{post.category}}}<br>
+  Subject:{{{post.subject}}}<br>
+  Message:{{{post.message}}}<br>
+</div>
+@endeach
+
 </body>
 </html>

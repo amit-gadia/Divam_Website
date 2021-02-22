@@ -100,6 +100,10 @@ async main({params,view}) {
 async create_new_post({params,view}) {
     return view.render('admina.blog.create_new_post')
 }
+async contact ({ view }) {
+    const abc= await Database.select('*').from('contacts').orderBy('id', 'desc')
+    return view.render('admina.blog.contact',{abc:abc})
+    }
 
 }
 

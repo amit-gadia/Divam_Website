@@ -50,6 +50,6 @@ Route.get('/admin/blog/visible/:id','AdminController.visit')
 Route.get('/admin/blog/hide/:id','AdminController.hideed')
 Route.get('/admin/blog/edit/:id','AdminController.edited')
 Route.get('/admin/blog/posts/:id','AdminController.posts')
-
+Route.get('/admin/contact','AdminController.contact')
 Route.get('/admin/blog/postss/:id','UserController.posts')
 Route.on('/ind').render('layouts.index')
